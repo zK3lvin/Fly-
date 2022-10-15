@@ -1,1 +1,5 @@
-
+name: Fly
+author: zK3lvin
+api: 4.0.0
+version: 1.0.0
+main: Fly\Loader
