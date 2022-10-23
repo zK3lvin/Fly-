@@ -12,7 +12,7 @@ class FlyCommand extends Command
 {
     public function __construct()
     {
-        parent::__construct('fly', 'Use this command to activate and deactivate the Fly');
+        parent::__construct("fly", "Fly command", "/fly <on|off>");
 }
   public function execute(CommandSender $sender, string $commandLabel, array $args): void
 {
