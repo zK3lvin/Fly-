@@ -24,18 +24,19 @@ class FlyCommand extends Command
 				$sender->sendMessage(p::RED. "Use /fly (on|off)");
 				return;
 			}
-			switch(strtolower($args[0])){
-				case "on":
-            $sender->setFlying(true);
-            $sender->setAllowFlight(true);
-            $sender->sendMessage(p::GREEN . "Se a activado el fly !");
-            break;
-        	case "off":
-            $sender->setFLying(false);
-            $sender->setAllowFlight(false);
-            $sender->sendMessage(p::RED . "Se a desactivado el fly!");
-            break;
+	switch (strtolower($args[0])) {
+            case "on":
+                $sender->setFlying(true);
+                $sender->setAllowFlight(true);
+                $sender->sendMessage(p::GREEN . "Se a activado el fly !");
+                break;
+            case "off":
+                $sender->setFLying(false);
+                $sender->setAllowFlight(false);
+                $sender->sendMessage(p::RED . "Se a desactivado el fly!");
+                break;
         }
+  
     }
 }
 
