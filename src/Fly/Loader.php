@@ -3,7 +3,7 @@
 namespace Fly;
 
 use pocketmine\plugin\PluginBase;
-use Fly\command\FlyCommand;
+use Fly\commands\FlyCommand;
 
 class Loader extends PluginBase {
 
